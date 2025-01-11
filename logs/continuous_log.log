@@ -17,3 +17,35 @@
 [2025-01-11 22:39:57,233 :INFO: common :Created directory at:artifacts/data_ingestion]
 [2025-01-11 22:40:06,191 :INFO: data_ingestion :File is downloaded]
 [2025-01-11 22:40:06,359 :INFO: main :Stage Data Ingestion stage Completed]
+[2025-01-11 22:45:51,697 :INFO: config :PyTorch version 2.5.1 available.]
+[2025-01-11 22:46:24,524 :INFO: common :yaml file:config\config.yaml loaded succesfully]
+[2025-01-11 22:46:24,527 :INFO: common :yaml file:params.yaml loaded succesfully]
+[2025-01-11 22:46:24,528 :INFO: common :Created directory at:artifacts]
+[2025-01-11 22:46:24,528 :INFO: common :Created directory at:artifacts/data_transformation]
+[2025-01-11 23:13:05,312 :INFO: config :PyTorch version 2.5.1 available.]
+[2025-01-11 23:13:05,646 :INFO: main :stage Data Ingestion stageinitiated]
+[2025-01-11 23:13:05,648 :INFO: common :yaml file:config\config.yaml loaded succesfully]
+[2025-01-11 23:13:05,649 :INFO: common :yaml file:params.yaml loaded succesfully]
+[2025-01-11 23:13:05,649 :INFO: common :Created directory at:artifacts]
+[2025-01-11 23:13:05,649 :ERROR: main :'ConfigurationManager' object has no attribute 'get_data_ingestion_config']
+Traceback (most recent call last):
+  File "C:\Text-Summarizer\main.py", line 8, in <module>
+    data_ingestion_pipeline.initiate_data_ingestion_config()
+  File "C:\Text-Summarizer\src\textSummarizer\pipeline\data_ingestion_pipeline.py", line 10, in initiate_data_ingestion_config
+    data_ingestion_config = config.get_data_ingestion_config()
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'ConfigurationManager' object has no attribute 'get_data_ingestion_config'
+[2025-01-11 23:15:26,885 :INFO: config :PyTorch version 2.5.1 available.]
+[2025-01-11 23:15:27,156 :INFO: main :stage Data Ingestion stageinitiated]
+[2025-01-11 23:15:27,160 :INFO: common :yaml file:config\config.yaml loaded succesfully]
+[2025-01-11 23:15:27,160 :INFO: common :yaml file:params.yaml loaded succesfully]
+[2025-01-11 23:15:27,160 :INFO: common :Created directory at:artifacts]
+[2025-01-11 23:15:27,160 :INFO: common :Created directory at:artifacts/data_ingestion]
+[2025-01-11 23:15:27,160 :INFO: data_ingestion :File already exist]
+[2025-01-11 23:15:27,287 :INFO: main :Stage Data Ingestion stage Completed]
+[2025-01-11 23:15:27,287 :INFO: main :stage Data Transformation stageinitiated]
+[2025-01-11 23:15:27,287 :INFO: common :yaml file:config\config.yaml loaded succesfully]
+[2025-01-11 23:15:27,287 :INFO: common :yaml file:params.yaml loaded succesfully]
+[2025-01-11 23:15:27,287 :INFO: common :Created directory at:artifacts]
+[2025-01-11 23:15:27,287 :INFO: common :Created directory at:artifacts/data_transformation]
+[2025-01-11 23:15:33,705 :INFO: main :Stage Data Transformation stage Completed]
