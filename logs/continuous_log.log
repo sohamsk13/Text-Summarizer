@@ -49,3 +49,73 @@ AttributeError: 'ConfigurationManager' object has no attribute 'get_data_ingesti
 [2025-01-11 23:15:27,287 :INFO: common :Created directory at:artifacts]
 [2025-01-11 23:15:27,287 :INFO: common :Created directory at:artifacts/data_transformation]
 [2025-01-11 23:15:33,705 :INFO: main :Stage Data Transformation stage Completed]
+[2025-01-11 23:18:27,631 :INFO: config :PyTorch version 2.5.1 available.]
+[2025-01-11 23:29:26,316 :INFO: common :yaml file:config\config.yaml loaded succesfully]
+[2025-01-11 23:29:26,324 :INFO: common :yaml file:params.yaml loaded succesfully]
+[2025-01-11 23:29:26,326 :INFO: common :Created directory at:artifacts]
+[2025-01-11 23:29:26,329 :INFO: common :Created directory at:artifacts/model_trainer]
+[2025-01-11 23:37:26,260 :INFO: config :PyTorch version 2.5.1 available.]
+[2025-01-11 23:37:26,737 :INFO: main :stage Data Ingestion stageinitiated]
+[2025-01-11 23:37:26,753 :INFO: common :yaml file:config\config.yaml loaded succesfully]
+[2025-01-11 23:37:26,755 :INFO: common :yaml file:params.yaml loaded succesfully]
+[2025-01-11 23:37:26,755 :INFO: common :Created directory at:artifacts]
+[2025-01-11 23:37:26,757 :INFO: common :Created directory at:artifacts/data_ingestion]
+[2025-01-11 23:37:26,758 :INFO: data_ingestion :File already exist]
+[2025-01-11 23:37:26,970 :INFO: main :Stage Data Ingestion stage Completed]
+[2025-01-11 23:37:26,970 :INFO: main :stage Data Transformation stageinitiated]
+[2025-01-11 23:37:26,970 :INFO: common :yaml file:config\config.yaml loaded succesfully]
+[2025-01-11 23:37:26,970 :INFO: common :yaml file:params.yaml loaded succesfully]
+[2025-01-11 23:37:26,970 :INFO: common :Created directory at:artifacts]
+[2025-01-11 23:37:26,970 :INFO: common :Created directory at:artifacts/data_transformation]
+[2025-01-11 23:37:28,984 :INFO: main :Stage Data Transformation stage Completed]
+[2025-01-11 23:37:28,984 :INFO: main :stage Model Trainer stage initiated]
+[2025-01-11 23:37:28,984 :INFO: common :yaml file:config\config.yaml loaded succesfully]
+[2025-01-11 23:37:28,990 :INFO: common :yaml file:params.yaml loaded succesfully]
+[2025-01-11 23:37:28,990 :INFO: common :Created directory at:artifacts]
+[2025-01-11 23:37:28,991 :INFO: common :Created directory at:artifacts/model_trainer]
+[2025-01-11 23:37:28,992 :ERROR: main :ModelTrainerConfig() takes no arguments]
+Traceback (most recent call last):
+  File "C:\Text-Summarizer\main.py", line 33, in <module>
+    model_trainer_pipeline.initiate_model_trainer()
+  File "C:\Text-Summarizer\src\textSummarizer\pipeline\model_trainer_pipeline.py", line 10, in initiate_model_trainer
+    model_trainer_config = config.get_model_trainer_config()
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Text-Summarizer\src\textSummarizer\config\configuration.py", line 42, in get_model_trainer_config
+    model_trainer_config=ModelTrainerConfig(
+                         ^^^^^^^^^^^^^^^^^^^
+TypeError: ModelTrainerConfig() takes no arguments
+[2025-01-11 23:52:56,976 :INFO: server :Started server process [8424]]
+[2025-01-11 23:52:56,976 :INFO: on :Waiting for application startup.]
+[2025-01-11 23:52:56,980 :INFO: on :Application startup complete.]
+[2025-01-11 23:52:56,981 :ERROR: server :[Errno 10048] error while attempting to bind on address ('0.0.0.0', 8080): only one usage of each socket address (protocol/network address/port) is normally permitted]
+[2025-01-11 23:52:56,981 :INFO: on :Waiting for application shutdown.]
+[2025-01-11 23:52:56,982 :INFO: on :Application shutdown complete.]
+[2025-01-11 23:53:45,272 :INFO: config :PyTorch version 2.5.1 available.]
+[2025-01-11 23:53:45,841 :INFO: main :stage Data Ingestion stageinitiated]
+[2025-01-11 23:53:45,844 :INFO: common :yaml file:config\config.yaml loaded succesfully]
+[2025-01-11 23:53:45,846 :INFO: common :yaml file:params.yaml loaded succesfully]
+[2025-01-11 23:53:45,846 :INFO: common :Created directory at:artifacts]
+[2025-01-11 23:53:45,847 :INFO: common :Created directory at:artifacts/data_ingestion]
+[2025-01-11 23:53:45,847 :INFO: data_ingestion :File already exist]
+[2025-01-11 23:53:45,984 :INFO: main :Stage Data Ingestion stage Completed]
+[2025-01-11 23:53:45,984 :INFO: main :stage Data Transformation stageinitiated]
+[2025-01-11 23:53:45,984 :INFO: common :yaml file:config\config.yaml loaded succesfully]
+[2025-01-11 23:53:45,991 :INFO: common :yaml file:params.yaml loaded succesfully]
+[2025-01-11 23:53:45,991 :INFO: common :Created directory at:artifacts]
+[2025-01-11 23:53:45,993 :INFO: common :Created directory at:artifacts/data_transformation]
+[2025-01-11 23:53:48,083 :INFO: main :Stage Data Transformation stage Completed]
+[2025-01-11 23:53:48,083 :INFO: main :stage Model Trainer stage initiated]
+[2025-01-11 23:53:48,086 :INFO: common :yaml file:config\config.yaml loaded succesfully]
+[2025-01-11 23:53:48,088 :INFO: common :yaml file:params.yaml loaded succesfully]
+[2025-01-11 23:53:48,089 :INFO: common :Created directory at:artifacts]
+[2025-01-11 23:53:48,089 :ERROR: main :'ConfigurationManager' object has no attribute 'params']
+Traceback (most recent call last):
+  File "C:\Text-Summarizer\main.py", line 33, in <module>
+    model_trainer_pipeline.initiate_model_trainer()
+  File "C:\Text-Summarizer\src\textSummarizer\pipeline\model_trainer_pipeline.py", line 10, in initiate_model_trainer
+    model_trainer_config = config.get_model_trainer_config()
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Text-Summarizer\src\textSummarizer\config\configuration.py", line 44, in get_model_trainer_config
+    params=self.params.TrainingArguments
+           ^^^^^^^^^^^
+AttributeError: 'ConfigurationManager' object has no attribute 'params'
